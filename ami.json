@@ -34,7 +34,7 @@
             "sudo apt update",
             "sudo apt install python3-pip -y",
             "sudo apt install unzip -y",
-            "sudo apt install apache2"
+            "sudo apt install apache2 -y"
         ]
     }]
 }
