@@ -5,7 +5,8 @@
         "aws_region": "{{env `aws_region`}}",
         "subnet_id": "subnet-0cc91482d3507d2ec",
         "source_ami": "ami-068663a3c619dd892",
-        "ssh_username": "ubuntu"
+        "ssh_username": "ubuntu",
+        "ami_users": "{{env `aws_users`}}"
     },
     "builders": [{
         "type": "amazon-ebs",
@@ -17,6 +18,7 @@
         "instance_type": "t2.micro",
         "ssh_username": "{{user `ssh_username`}}",
         "ami_name": "csye6225_a4_{{timestamp}}",
+        "ami_users": "{{user `ami_users`}}"
         "launch_block_device_mappings": [{
             "device_name": "/dev/sda1",
             "volume_type": "gp2",
