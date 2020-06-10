@@ -30,6 +30,7 @@
             "Foo=foo"
         ],
         "inline": [
+            "sleep 30",
             "sudo apt update",
             "sudo apt install python3-pip -y",
             "sudo apt install unzip -y",
